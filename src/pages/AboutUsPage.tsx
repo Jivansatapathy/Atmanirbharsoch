@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import { Award, Target, Zap, Globe, Shield, Activity, Crosshair, Users, ArrowUpRight } from 'lucide-react';
 
 // --- UTILITY COMPONENTS ---
@@ -48,15 +48,6 @@ const SpotlightCard: React.FC<{ children: React.ReactNode; className?: string; s
 // --- MAIN PAGE ---
 
 const AboutUsPage: React.FC = () => {
-    // Scroll listener for parallax effects if needed later
-    const [scrolled, setScrolled] = useState(0);
-
-    useEffect(() => {
-        const handleScroll = () => setScrolled(window.scrollY);
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
-
     return (
         <div style={{ backgroundColor: '#030303', color: '#fff', fontFamily: 'Inter, sans-serif', minHeight: '100vh', position: 'relative', overflowX: 'hidden' }}>
             <NoiseOverlay />

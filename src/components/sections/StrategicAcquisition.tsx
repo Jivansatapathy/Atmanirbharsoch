@@ -1,6 +1,6 @@
 import React from 'react';
 import { SplitLayout } from '../layout/SplitLayout';
-import { Button } from '../ui/Button';
+import { Button } from '../ui/button-legacy';
 import { Crosshair } from 'lucide-react';
 
 export const StrategicAcquisition: React.FC = () => {
