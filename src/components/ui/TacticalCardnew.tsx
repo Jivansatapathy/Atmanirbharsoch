@@ -1,4 +1,4 @@
-import { ReactNode, CSSProperties } from "react";
+import { type ReactNode, type CSSProperties } from "react";
 import { cn } from "@/lib/utils";
 
 interface TacticalCardProps {
