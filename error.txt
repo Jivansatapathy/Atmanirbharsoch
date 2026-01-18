@@ -1,0 +1,8 @@
+src/App.tsx(1,1): error TS6133: 'React' is declared but its value is never read.
+src/components/layout/Grid.tsx(39,5): error TS6133: 'mobileSpan' is declared but its value is never read.
+src/components/sections/OperationalEnvironments.tsx(8,40): error TS2322: Type '{ children: Element; span: number; style: { marginBottom: string; }; }' is not assignable to type 'IntrinsicAttributes & ColumnProps'.
+  Property 'style' does not exist on type 'IntrinsicAttributes & ColumnProps'.
+src/components/sections/OperationalEnvironments.tsx(13,39): error TS2322: Type '{ children: Element[]; span: number; style: { paddingRight: string; }; }' is not assignable to type 'IntrinsicAttributes & ColumnProps'.
+  Property 'style' does not exist on type 'IntrinsicAttributes & ColumnProps'.
+src/components/sections/OperationalEnvironments.tsx(29,39): error TS2322: Type '{ children: Element[]; span: number; style: { paddingLeft: string; }; }' is not assignable to type 'IntrinsicAttributes & ColumnProps'.
+  Property 'style' does not exist on type 'IntrinsicAttributes & ColumnProps'.

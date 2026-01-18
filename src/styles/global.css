@@ -1,0 +1,138 @@
+/* Global Reset & Base Styles */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    min-height: 100vh;
+    font-family: var(--font-sans);
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: var(--line-height-normal);
+}
+
+/* Typography Defaults */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-tight);
+    margin-bottom: var(--space-sm);
+    letter-spacing: -0.02em;
+    /* Tight, precise feel */
+}
+
+h1 {
+    font-size: var(--text-h1);
+}
+
+h2 {
+    font-size: var(--text-h2);
+    border-bottom: 2px solid var(--color-black);
+    /* Structural emphasis */
+    padding-bottom: var(--space-xs);
+}
+
+p {
+    max-width: 65ch;
+    /* Readable line length */
+    margin-bottom: var(--space-md);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    font-family: inherit;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* Utilities */
+.container {
+    width: 100%;
+    max-width: var(--grid-max-width);
+    margin: 0 auto;
+    padding: 0 var(--space-md);
+}
+
+.text-red {
+    color: var(--color-red-ops);
+}
+
+.bg-black {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+/* Visually Hidden (for a11y) */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Utility Classes for Cards */
+.classification-badge {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    font-family: 'Courier New', monospace;
+    font-size: 0.625rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border: 1px solid var(--color-red-ops);
+    background-color: rgba(255, 0, 0, 0.1);
+    color: var(--color-red-ops);
+}
+
+.grid-pattern {
+    background-image: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+.red-glow {
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+}
+
+.font-tactical {
+font-family: 'Courier New', monospace;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Animation for fade in */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 0.5s ease-out forwards;
+}
